@@ -1,5 +1,31 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  .row
+    .card.purple.darken-1
+      .card-content.white-text
+        span.card-title Habitación
+        p
+          div.temperature
+          div.humidity
+  .row
+    .card.lime.darken-1
+      .card-content.white-text
+        span.card-title Controles
+        p
+          div.button1
+            h4 Luz 1
+            a.waver-effect.waves-light.btn.btn1_off
+              i.far.fa-lightbulb Apagar
+            a.waver-effect.waves-light.btn.btn1_on
+              i.fas.fa-lightbulb Encender
+              
+             
+          div.button2
+  .row
+    .card.orange.darken-4
+      .card-content.white-text
+        span.card-title Exterior
+        p
+          span.temperature
+          span.humidity
