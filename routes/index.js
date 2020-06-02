@@ -10,5 +10,6 @@ router.get('/', function(req, res, next) {
 /*API ROUTES*/
 router.get('/api/change-lights/:numberled/:statusled', ledController.led);
 router.get('/api/get-temperature', temperatureController.get_temperature);
+router.get('/api/get-exterior-data', temperatureController.get_exterior_data);
 router.get('/api/change-rele/:number/:statusrele', releController.rele);
 module.exports = router;
