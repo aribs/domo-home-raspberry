@@ -5,11 +5,14 @@ html
     meta(name='viewport' content='width=device-width, user-scalable=no')
     link(rel='stylesheet', href='../node_modules/materialize-css/dist/css/materialize.min.css')
     link(rel='stylesheet', href='../node_modules/@fortawesome/fontawesome-free/css/all.min.css')
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/style.css') 
+
   body
+    block header
     block content
   scripts
     script(src='../node_modules/materialize-css/dist/css/materialize.min.css')
+    script(src='../node_modules/moment/min/moment-with-locales.min.js')
     script(src='/javascripts/libs/dom.js')
     script(src='/javascripts/libs/http.js')
     script(src='/javascripts/scripts.js')

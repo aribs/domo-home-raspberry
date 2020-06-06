@@ -1,31 +1,47 @@
 extends layout
 
 block content
-  .row
-    .card.purple.darken-1
-      .card-content.white-text
-        span.card-title Habitación
-        p
-          div.temperature
-          div.humidity
-  .row
-    .card.lime.darken-1
-      .card-content.white-text
-        span.card-title Controles
-        p
-          div.button1
-            h4 Luz 1
-            a.waver-effect.waves-light.btn.btn1_off
-              i.far.fa-lightbulb Apagar
-            a.waver-effect.waves-light.btn.btn1_on
-              i.fas.fa-lightbulb Encender
-              
-             
-          div.button2
-  .row
-    .card.orange.darken-4
-      .card-content.white-text
-        span.card-title Exterior
-        p
-          span.temperature
-          span.humidity
+  include components/header.pug
+  include components/hour_date.pug
+  .container_app
+    .column.first_column
+      .card.purple.darken-1
+        .card-content.white-text
+          span.card-title Habitación
+          p
+            div.temperature.data_info
+            div.humidity.data_info
+      .card.orange.darken-4
+        .card-content.white-text
+          div.exterior-title
+            span.card-title.exterior_title_label Exterior
+            span.exterior_title_show_weather
+          p
+            .temperature.external_temperature.data_info
+            .humidity.external_humidity.data_info
+            .windspeed.external_windspeed.data_info
+            .precipitation.data_info
+              .span.precipitation_probability
+              .span.precipitation_intensity
+    .column
+      .card.lime.darken-1
+        .card-content.white-text
+          span.card-title Controles
+            div.button1.button_container
+              div.column_button
+                span.label_buttons_action Luz 1
+              div.column_button
+                a.waver-effect.waves-light.btn-large.btn1_off.pink.darken-2.btn_action
+                  i.far.fa-lightbulb 
+              div.column_button
+                a.waver-effect.waves-light.btn-large.btn1_on.pink.darken-2.btn_action
+                  i.fas.fa-lightbulb 
+            div.button2.button_container
+              div.column_button
+                span.label_buttons_action Luz 2
+              div.column_button
+                a.waver-effect.waves-light.btn-large.btn2_off.pink.darken-2.btn_action
+                  i.far.fa-lightbulb 
+              div.column_button
+                a.waver-effect.waves-light.btn-large.btn2_on.pink.darken-2.btn_action
+                  i.fas.fa-lightbulb 

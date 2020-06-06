@@ -12,4 +12,6 @@ router.get('/api/change-lights/:numberled/:statusled', ledController.led);
 router.get('/api/get-temperature', temperatureController.get_temperature);
 router.get('/api/get-exterior-data', temperatureController.get_exterior_data);
 router.get('/api/change-rele/:number/:statusrele', releController.rele);
+router.get('/api/save-interior-temperature', releController.rele);
+router.get('/api/get-historic-interior-temperature', temperatureController.get_historic_temperature);
 module.exports = router;

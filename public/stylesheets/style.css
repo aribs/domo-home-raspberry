@@ -6,3 +6,80 @@ body {
 a {
   color: #00B7FF;
 }
+/*HEADER*/
+.header_button{
+  font-size: 40px;
+  margin-left: 40px;
+}
+
+.menu_element{
+  width: 10%;
+  color: white;
+  font-size: 22px;
+  padding: 1.5%;
+}
+
+/*HOUR & DATE BAR*/
+.hour_container{
+  display: flex;
+  width: 100%;
+  margin-top: 1%;
+}
+.date_hour_column {
+  width: 50%;
+  color: white;
+  font-size: 22px;
+  padding: 1.5%;
+}
+
+.text_hour{
+  margin-left: 5%;
+  font-size: 40px;
+}
+.text_date{
+  margin-left: 5%;
+  font-size: 40px;
+}
+
+/*CONTAINER APP*/
+.container_app{
+  width: 100%;
+  display: flex;
+}
+.column{
+  width: 50%;
+  margin: 5px;
+}
+.card-title{
+  font-size: 35px !important;
+}
+.data_info{
+  font-size: 22px;
+}
+.btn_action{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.label_buttons_action{
+  font-size: 24px;
+}
+.button_container{
+  width: 100%;
+  display: flex;
+  margin-top: 2%;
+}
+.column_button{
+  width: 30%;
+}
+.exterior-title{
+  width: 100%;
+  display: flex;
+}
+.exterior-title_label {
+  width: 40%;
+}
+.exterior_title_show_weather{
+  width: 60%;
+  text-align: right;
+  font-size: 40px;
+}
